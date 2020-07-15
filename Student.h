@@ -28,25 +28,23 @@ public:
     }
 
     string getLetterGrade() const {
-        string letterGrade;
-
-        if(average >= 90) {
-            letterGrade = "A";
-        }
-        else if(average >= 80) {
-            letterGrade = "B";
-        }
-        else if (average >= 70) {
-            letterGrade = "C";
-        }
-        else if (average >= 60) {
-            letterGrade = "D";
-        }
-        else {
-            letterGrade = "F";
+        if (average >= 90) {
+            return "A";
         }
 
-        return letterGrade;
+        if (average >= 80) {
+            return "B";
+        }
+
+        if (average >= 70) {
+            return "C";
+        }
+
+        if (average >= 60) {
+            return "D";
+        }
+
+        return "F";
     }
 
 private:

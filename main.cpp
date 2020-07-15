@@ -11,6 +11,8 @@ int main() {
         << "'s letter grade equivalent of "
         << john.getLetterGrade() << "\n";
 
+    jane.setAverage(54);
+
     cout << jane.getName()
         << "'s letter grade equivalent of "
         << jane.getLetterGrade() << "\n";
